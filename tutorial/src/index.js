@@ -2,15 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
-/*
-JSX RULES
--return single element
--div / section / article or fragment
--use camelCase for html attribute
--className instead of class
--close every element
-*/
-
 function BookList() {
   return (
     <section className="booklist">
@@ -42,6 +33,10 @@ const Image = () => (
 );
 
 const Title = () => <h1>I Love You to the Moon and Back</h1>;
-const Author = () => <h4>Amelia Hepworth</h4>;
+const Author = () => (
+  <h4 style={{ color: "#617d98", fontSize: "0.75rem", marginTop: "0.25rem" }}>
+    Amelia Hepworth
+  </h4>
+);
 
 ReactDOM.render(<BookList />, document.getElementById("root"));
