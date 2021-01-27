@@ -13,11 +13,16 @@ JSX RULES
 function Greeting() {
   return (
     <div>
-      <h2>John doe</h2>
-      <p>This is my message</p>
+      <Person />
+      <Message />
     </div>
   );
 }
+
+const Person = () => <h2>John Doe</h2>;
+const Message = () => {
+  return <p>This is my message</p>;
+};
 
 /*const Greeting = () => {
   return React.createElement("h1", {}, "hello world");
